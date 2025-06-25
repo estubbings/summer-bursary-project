@@ -1,1 +1,9 @@
-
+folium
+geopandas
+ghp-import
+jupyter-book
+matplotlib
+notebook
+numpy
+mapclassify
+fiona==1.9.5
