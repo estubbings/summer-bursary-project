@@ -8,6 +8,7 @@ This project is built using Jupyter Book and deployed with GitHub Pages.
 
 The link to the deployed website is here: https://estubbings.github.io/summer-bursary-project 
 
+
 ## Contributing guidance
 
 To contribute to this project:
@@ -21,6 +22,42 @@ To contribute to this project:
 7. Open a pull request to merge your changes
 
 
+## 🚀 Setup Instructions
+
+This project uses **Git Large File Storage (Git LFS)** to manage large files such as `.geojson` datasets and Jupyter notebooks.
+
+### 1. Install Git LFS (one-time setup per system)
+
+If you haven’t already, install Git LFS:
+
+```bash
+# macOS
+brew install git-lfs
+
+# Debian/Ubuntu
+sudo apt install git-lfs
+
+# Windows (use Git Bash or download from https://git-lfs.github.com/)
+git lfs install
+```
+
+Then initialise:
+```bash
+git lfs install
+```
+
+### 2. (Optional) Track Files within repository
+
+Go to your git repository and use the commands:
+``` bash
+git lfs track "*.geojson"
+git lfs track "*.ipynb"
+```
+
+
+
+
+
 ## Important documentation
 
 - [GeoPandas](https://geopandas.org/)
@@ -28,6 +65,9 @@ To contribute to this project:
 - [GitHub](https://docs.github.com/en/get-started)
 - [Jupyter](https://docs.jupyter.org/)
 - [JupyterBook](https://jupyterbook.org/)
+- [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage#) 
+
+
 
 ## Data sources
 - [MHCLG & CommunitiesOpenData - Indices of Multiple Deprivation (IMD) 2019](https://communitiesopendata-communities.hub.arcgis.com/search?q=IMD)
