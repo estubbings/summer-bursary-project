@@ -4,7 +4,7 @@ Repository for my summer bursary scheme with the School of Mathematics at the Un
 
 The aim of this project is to use cluster analysis techniques and spatial mapping to investigate how levels of deprivation vary across England.
 
-This project uses the most recent official statistics (June 2025) for English Indices of Deprivation (IoD), published by the Ministry of Housing, Communities & Government in September 2019.
+This project uses the most recent official statistics (June 2025) for English Indices of Deprivation (IoD), published by the Ministry of Housing, Communities & Government (MHCG) in September 2019.
 
 The link to the deployed website is here: https://estubbings.github.io/summer-bursary-project 
 

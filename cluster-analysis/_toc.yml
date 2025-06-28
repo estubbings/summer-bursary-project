@@ -6,3 +6,4 @@ root: introduction
 chapters:
  - file: initial-maps
  - file: domain-relationships
+ - file: exploring-haringey
