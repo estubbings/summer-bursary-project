@@ -3,11 +3,15 @@
 
 title: Clustering Analysis of English Demographic Data
 author: Ella Stubbings
+logo: haringey-icon.jpeg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+  exclude_patterns:
+    - "rough-work/*.ipynb"
+
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -26,13 +30,16 @@ parse:
     - smartquotes
     - substitution
     - linkify
-    - citations
+    - tasklist
+    - attrs_inline
 
-bibtex_bibfiles: 
-- references.bib
+bibtex_bibfiles:
+  - references.bib
 
 citation:
-  style: harvard.csl
+  style: harvard-cite-them-right.csl
+
+    
 
 
 # Information about where the book exists on the web
@@ -46,3 +53,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  favicon: haringey-icon.jpeg # optional, for the browser tab icon
+  logo: haringey-icon.jpeg
+  navbar_title: 
+

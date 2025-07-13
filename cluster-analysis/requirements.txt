@@ -8,3 +8,4 @@ numpy
 mapclassify
 fiona==1.9.5
 docutils
+myst-parser

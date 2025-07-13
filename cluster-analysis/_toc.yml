@@ -2,8 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: introduction
+root: index
 chapters:
- - file: initial-maps
- - file: domain-relationships
+ - file: introduction
+ - file: initial-analysis
  - file: exploring-haringey
