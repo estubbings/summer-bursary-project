@@ -2,8 +2,11 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: index
+root: a-index
 chapters:
- - file: introduction
- - file: initial-analysis
- - file: exploring-haringey
+ - file: b-introduction
+ - file: c-data-analysis
+ - file: d-methodology
+ - file: e-ranks
+ - file: f-scores
+ - file: g-conclusion
