@@ -8,4 +8,4 @@
 - [Chapter 4: KMeans Clustering on Ranks of the IoD](e-ranks)
 - [Chapter 5: KMeans Clustering on Scores of the IoD](f-ranks)
 - [Chapter 6: Conclusion](g-conclusion)
-- [Chapter 7: Appendix](h-appendix)
+- [Appendix](h-appendix)

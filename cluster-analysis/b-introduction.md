@@ -1,2 +1,19 @@
 # 1. Introduction
 
+The aim of this project is to use cluster analysis on the English Indices of Deprivation 2019 to identify notable patterns in how deprivation varies across England. This project uses data from the Office for National Statistics, licensed for publishing under the Open Government Licence v.3.0.
+
+Cluster analysis is an unsupervised machine learning technique, that uses measures of dissimilarity to group observations from a dataset into clusters based on similar characteristics.
+
+The English Indices of Deprivation, which together combine to form the Index of Multiple Deprivation, are 7 distinct “domains” which aim to give a broad picture of deprivation across England. They cover economic, social and environmental issues such as health and employment, and have been one of the most trusted sources of information on social issues since the first edition in 2000. 2019 is the most up to date version of the data currently, with the next installation expected to be later this year.
+
+The indices present a good opportunity for clustering, given that each domain is distinct and they are not necessarily correlated with each other: for example the air quality (part of the living environment domain) may be bad in a less deprived neighbourhood, or vice versa. The dataset is also very large, with 32,844 entries of Lower Layer Super Output areas, but is also segmented by 317 local authorities which allow for more in depth analysis of local areas.
+
+This report is split into 4 main sections: exploratory data analysis, methodology, KMeans clustering on ranks and KMeans clustering on scores. 
+
+[Chapter 2](c-data-analysis.ipynb), exploratory data analysis, provides an in depth explanation of the indices of deprivation dataset. For each domain, there are three values calculated: the score, the rank and the decile. The analysis explores how these values vary across the country, the relationships (correlations) between each domain and some in depth analysis of two local authorities: Leeds and Haringey, a borough of London.
+
+[Chapter 3](d-methodology.ipynb), methodology, presents the research behind choosing the most appropriate method for cluster analysis. Clustering is a very broad technique, and there are many considerations needed to ensure the results gained are appropriate and accurate. This section discusses decisions such as the use of hierarchical clustering vs KMeans clustering and methods to choose the most appropriate number of clusters, as well as verifying the validity of clusters to be considered distinct. 
+
+[Chapter 4](e-ranks.ipynb), KMeans clustering on ranks, uses the KMeans algorithm to form clusters based on the ranks of each observation. It also builds on some hypotheses developed in chapter 2, especially surrounding the London borough of Haringey. It is important to note, however, that ranks are generally considered to be unsuitable for cluster analysis in the academic community due to the homogeneity of values, but I was unaware of this at the start of the project. Therefore, I have still included this section, but it should be noted that the confirmation of patterns using domain scores in chapter 5 is vital.
+
+[Chapter 5](f-scores.ipynb), KMeans clustering on scores of the IoD is the culmination of this project and presents the most rigorous and useful findings. It explores how deprivation varies across the UK, and how the choice of indicators for certain domains produces quirks in the results, for example, the consistent grouping of rural areas and much of London into the same cluster. This section also completes analysis on Leeds and Haringey, and searches for the local authorities with the most distinct clusters.
